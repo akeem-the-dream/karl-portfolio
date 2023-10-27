@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { legacy_createStore as createStore } from "redux";
+import { Provider, connect } from "react-redux";
+import "./App.css";
+import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
+import { Home } from "./components/Home";
+import { mapStateToProps, mapDispatchToProps } from "./store/Selector";
+import { storeReducer } from "./store/Reducer";
+const store = createStore(storeReducer);
 
-function App() {
+const Components = ({ Darkmode, toggle, displayModal, modalInfo }) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar Darkmode={Darkmode} toggle={toggle} />
+      <Home></Home>
+      <Footer Darkmode={Darkmode} />
     </div>
+  );
+};
+const Container = connect(mapStateToProps, mapDispatchToProps)(Components);
+function App() {
+  return (
+    <Provider store={store}>
+      <Container />
+    </Provider>
   );
 }
 
