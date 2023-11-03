@@ -40,13 +40,15 @@
     flex-wrap: nowrap;
 }
 
-.footer-social-wrapper .footer-social li {
+.footer-social-wrapper .footer-social li a{
     display: flex;
     font-size: 150px;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     flex-direction: column;
+    color: white;
+    text-decoration: none;
 }
 
 .footer-social span {

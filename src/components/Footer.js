@@ -16,17 +16,23 @@ export const Footer = () => {
       <div className="footer-social-wrapper">
         <ul className="footer-social">
           <li>
-            <FontAwesomeIcon icon={faEnvelope} />
-            <span>Mail Me</span>
+            <a href="/">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <span>Mail Me</span>
+            </a>
           </li>
 
           <li>
-            <FontAwesomeIcon icon={faLinkedin} />
-            <span>Link Me</span>
+            <a href="/">
+              <FontAwesomeIcon icon={faLinkedin} />
+              <span>Link Me</span>
+            </a>
           </li>
           <li>
-            <FontAwesomeIcon icon={faInstagram} />
-            <span>Follow Me</span>
+            <a href="/">
+              <FontAwesomeIcon icon={faInstagram} />
+              <span>Follow Me</span>
+            </a>
           </li>
         </ul>
       </div>

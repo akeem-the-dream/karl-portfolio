@@ -5,36 +5,52 @@ body {
 .topnav {
     position: relative;
     margin: 0;
-    padding: 0;
     width: 100%;
-    height: 50px;
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 99;
+    height: min-content;
+    padding: 10px 0;
 }
 
 .nav-logo {
     float: left !important;
+
+}
+
+.nav-logo:first-child {
+    margin-left: 15px;
+}
+
+.nav-logo:first-child {
+    margin-left: 15px;
 }
 
 ul.topnav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: rgb(43, 43, 43);
 }
 
 ul.topnav li {
     float: right;
+    margin: 5px;
 }
 
 ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 10px;
     text-decoration: none;
+    border-radius: 20px;
+}
+
+ul.topnav li :hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -42,11 +58,12 @@ ul.topnav li a:hover:not(.active) {
 }
 
 ul.topnav li a.active {
-    background-color: #04AA6D;
+    background-color: darkgray
 }
 
 ul.topnav li.right {
     float: right;
+    margin-right: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -55,4 +72,8 @@ ul.topnav li.right {
     ul.topnav li {
         float: none;
     }
+}
+
+.active {
+    background-color: darkgray
 }

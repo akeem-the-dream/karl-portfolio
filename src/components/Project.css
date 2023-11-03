@@ -1,0 +1,121 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    align-items: flex-start;
+    padding: 0 5vw;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.project-header h3 {
+    font-style: italic;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 26px;
+    white-space: pre-line;
+    opacity: 1;
+    visibility: visible;
+    font-family: "Source Sans Pro";
+}
+
+.project-header h1 {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 72px;
+    white-space: pre-line;
+    opacity: 1;
+    visibility: visible;
+    font-family: "Source Sans Pro";
+}
+
+.project-row {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.pvsa-img-1,
+.pvsa-img-2,
+.pvsa-img-3,
+.pvsa-img-4 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 35vh;
+}
+
+.pvsa-img-1 {
+    margin: 0 3vw 0 0;
+    width: 120%;
+    background-image: url("../assets/pvsa-logo-2x.png");
+
+}
+
+.pvsa-img-2 {
+    margin: 0 0 0 3vw;
+    width: 92%;
+    background-image: url("../assets/dbl.jpeg");
+
+}
+
+.pvsa-img-3 {
+    margin: 0 3vw 0 0;
+    width: 500%;
+    background-image: url("../assets/banner_baee.png");
+
+}
+
+.pvsa-img-4 {
+    margin: 0 0 0 3vw;
+    width: 210%;
+    background-image: url("../assets/books-for-africa.jpeg");
+
+}
+
+.project-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-desc span {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 38px;
+    white-space: pre-line;
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-desc p {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 0px;
+    line-height: 28px;
+    white-space: pre-line;
+    opacity: 1;
+    visibility: visible;
+    margin: 20px 0 0 0;
+}

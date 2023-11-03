@@ -6,40 +6,40 @@ export const Home = () => {
     <div className="home-wrapper">
       <div className="banner">
         <div>
-          <span>
-            TECHNOLOGY PROFESSIONAL, ENTREPRENEUR, PR SPECIALIST, INTERNATIONAL
-            MODEL, SCHOLAR
-          </span>
+          <h1>
+            Karl-Yann Assah: Technology Professional, Entrepreneur, Pr
+            Specialist, International Model, Scholar
+          </h1>
           <div className="banner-video">
             <iframe
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/ClJ_2F7WsG8?si=GGqm79Lw_M_YY_jk"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
       </div>
       <div className="quote-wrapper">
         <p>
-          <span>[GIVE YOURSELF A FIGHTING CHANCE],</span>
-          <span>WHAT IF IT TURNS OUT BETTER THAN YOU EVER IMAGINED?</span>
+          <span>"[GIVE YOURSELF A FIGHTING CHANCE],</span>
+          <span>WHAT IF IT TURNS OUT BETTER THAN YOU EVER IMAGINED?"</span>
           <span className="quote-name">KARL-YANN ASSAH</span>
         </p>
       </div>
       <div className="project-row-wrapper">
-        <div>
+        <div className="project-1">
           <label>KARL-YANN ASSAH</label>
           <p>Professional Experience</p>
         </div>
-        <div>
+        <div className="project-2">
           <label>EDENTITY</label>
           <p>Elevating Personal Branding</p>
         </div>
-        <div>
+        <div className="project-3">
           <label>IMPACT</label>
           <p>Action Speaks Louder</p>
         </div>
@@ -54,12 +54,16 @@ export const Home = () => {
                 height="100%"
                 src="https://www.youtube.com/embed/-PQr8T9-sTU?si=EYlA15c0SyXteJSN"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="news-desc">
+              <div className="news-desc-sub">
+                <p>News</p>
+                <p>CP24 News - Toronto's #1 Breakfast TV Show</p>
+              </div>
               <p>
                 Karl-Yann explains his debut in modeling, how he got discovered
                 and how he gained the confidence to launch his career as
@@ -67,9 +71,39 @@ export const Home = () => {
               </p>
             </div>
           </div>
-          <div className="podcast-block">
-            <div className="podcast-img"></div>
-            <div className="podcast-desc"></div>
+          <div className="news-block">
+            <div className="news-vid">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/kksOWG3RIK0?si=9UuKIhG94rvMFiGO"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="news-desc">
+              <div className="news-desc-sub">
+                <p>Podcast</p>
+                <p>'Around A Glass' - Episode #9</p>
+              </div>
+              <p>
+                Filled with value and intelligence, the ninth episode was shared
+                with around the modeling industry, personal branding and
+                self-awareness. Thrilled to share a rich discussion around a
+                glass, Karl-Yann reminds us how important it is to push
+                ourselves in order to attract opportunities. Having an valuable
+                presence is vital depends on the career path because credibility
+                comes with that as well. Taking risk and being willing to be
+                uncomfortable allow us to grow. To dedicate his life to become
+                better and leave a legacy are his goals. With that, I leave you
+                with one of his quote “complacency kills dreams, complacency
+                keeps you at the same level & complacency gives you regret. It’s
+                up to you to do the work for what matters the most”. Enjoy the
+                show! and don’t forget, Around A Glass always win.
+              </p>
+            </div>
           </div>
         </div>
       </div>

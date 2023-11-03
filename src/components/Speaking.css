@@ -1,0 +1,154 @@
+.speaking {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+    height: max-content;
+    background-color: rgb(22, 22, 22);
+}
+
+.speaking-header {
+    padding: 0 5vw;
+}
+
+.speaking-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 72px;
+    white-space: pre-line;
+    opacity: 1;
+    visibility: visible;
+    font-family: "Source Sans Pro";
+}
+
+.speaking-info-row-wrapper {
+    padding: 0 5vw;
+    margin: 0;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(22, 22, 22);
+    width: auto;
+
+}
+
+
+.speaking-info-row {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+}
+
+.speaking-news-block {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+}
+
+.speaking-news-vid {
+    height: 48%;
+    width: 100%;
+}
+
+.speaking-news-vid iframe {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.speaking-news-desc p {
+    width: auto;
+    padding-left: 0;
+    overflow-wrap: normal;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0 0 20px 0;
+
+}
+
+.speaking-news-desc-sub {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.speaking-news-desc a {
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.speaking-quote-row {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    padding: 0 5vw;
+}
+
+.speaking-quote-row p {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    font-size: 33px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: 400;
+}
+
+.speaking-footer-wrapper {
+    background-color: rgb(22, 22, 22);
+    padding: 0 5vw;
+}
+
+.speaking-footer-wrapper p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+}
+
+.speaking-footer-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.speaking-footer-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    width: 245px;
+    height: 40px;
+    opacity: 1;
+    background-color: rgb(0, 0, 0);
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px;
+    border: 0px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.speaking-footer-btn button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in-out;
+}

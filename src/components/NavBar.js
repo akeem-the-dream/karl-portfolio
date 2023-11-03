@@ -1,28 +1,60 @@
+import { Outlet, Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 
 export const NavBar = () => {
   return (
-    <ul className="topnav">
-      <li className="nav-logo">
-        <a href="#home">Karl-Yann Assah</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a className="active" href="#speaking">
-          Speaking
-        </a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#edentity">Edentity</a>
-      </li>
-      <li className="right">
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
+    <>
+      <ul className="topnav">
+        <li className="nav-logo">
+          <Link
+            className={`${useLocation().pathname === "/" ? "active" : ""}`}
+            to="/"
+          >
+            Karl-Yann Assah
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`${
+              useLocation().pathname.includes("edentity") ? "active" : ""
+            }`}
+            to="/edentity"
+          >
+            Edentity
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`${
+              useLocation().pathname.includes("projects") ? "active" : ""
+            }`}
+            to="/projects"
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`${
+              useLocation().pathname.includes("speaking") ? "active" : ""
+            }`}
+            to="/speaking"
+          >
+            Speaking
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={`${
+              useLocation().pathname.includes("about") ? "active" : ""
+            }`}
+            to="/about"
+          >
+            About
+          </Link>
+        </li>
+      </ul>
+      <Outlet />
+    </>
   );
 };
