@@ -64,7 +64,7 @@ export const About = () => {
           </span>
         </p>
         <div className="about-img">
-          <img alt="image of Karl" src={img}></img>
+          <img alt="Karl" src={img}></img>
         </div>
       </div>
       <div className="about-char">
