@@ -98,12 +98,11 @@ export const Footer = () => {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </div>
-                <div className="contRow">
+                <div className="contRow-date">
+                  Date of the event?*
                   <input
                     required
                     type="date"
-                    value={formDetails.date}
-                    placeholder="What is the date of the event?*"
                     onChange={(e) => onFormUpdate("date", e.target.value)}
                   />
                 </div>

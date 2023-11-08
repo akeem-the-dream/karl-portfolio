@@ -1,5 +1,8 @@
 import React from "react";
 import "./Home.css";
+import img1 from "../assets/karl-1.jpeg";
+import img2 from "../assets/edentity-logo.png";
+import img3 from "../assets/dbl.jpeg";
 
 export const Home = () => {
   return (
@@ -32,14 +35,17 @@ export const Home = () => {
       </div>
       <div className="project-row-wrapper">
         <div className="project-1">
+          <img alt="Karl" src={img1}></img>
           <label>KARL-YANN ASSAH</label>
           <p>Professional Experience</p>
         </div>
         <div className="project-2">
+          <img alt="EDENTITY" src={img2}></img>
           <label>EDENTITY</label>
           <p>Elevating Personal Branding</p>
         </div>
         <div className="project-3">
+          <img alt="IMPACT" src={img3}></img>
           <label>IMPACT</label>
           <p>Action Speaks Louder</p>
         </div>
