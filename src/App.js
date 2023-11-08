@@ -17,7 +17,7 @@ const store = createStore(storeReducer);
 const Components = ({}) => {
   return (
     <div className="App">
-      <BrowserRouter basename="karl-portfolio">
+      <BrowserRouter basename="">
         <Routes>
           <Route path="/" element={<NavBar />}>
             <Route index element={<Home />} />
