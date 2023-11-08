@@ -28,7 +28,7 @@ const Components = ({ Darkmode, toggle, displayModal, modalInfo }) => {
           </Route>
         </Routes>
       </BrowserRouter>
-      <Footer Darkmode={Darkmode} />
+      <Footer />
     </div>
   );
 };
