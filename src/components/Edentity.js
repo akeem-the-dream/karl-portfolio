@@ -58,10 +58,14 @@ export const Edentity = () => {
       </div>
       <div className="edentity-footer">
         <div className="footer-btn">
-          <a href="https://edentityglobal.com" target="_blank">
+          <a href="https://edentityglobal.com" target="_blank" rel="noreferrer">
             Visit Webpage
           </a>
-          <a href="https://instagram.com/edentitygroup" target="_blank">
+          <a
+            href="https://instagram.com/edentitygroup"
+            target="_blank"
+            rel="noreferrer"
+          >
             Visit Instagram
           </a>
         </div>

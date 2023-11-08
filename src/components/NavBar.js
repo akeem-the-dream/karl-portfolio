@@ -6,9 +6,10 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./NavBar.css";
 
 export const NavBar = () => {
+  const locationPath = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [useLocation().pathname]);
+  }, [locationPath.pathname]);
 
   const [status, setStatus] = useState(true);
   return (
@@ -18,7 +19,7 @@ export const NavBar = () => {
           <li>
             <Link
               className={`${
-                useLocation().pathname.includes("edentity") ? "active" : ""
+                locationPath.pathname.includes("edentity") ? "active" : ""
               }`}
               to="/edentity"
             >
@@ -28,7 +29,7 @@ export const NavBar = () => {
           <li>
             <Link
               className={`${
-                useLocation().pathname.includes("projects") ? "active" : ""
+                locationPath.pathname.includes("projects") ? "active" : ""
               }`}
               to="/projects"
             >
@@ -38,7 +39,7 @@ export const NavBar = () => {
           <li>
             <Link
               className={`${
-                useLocation().pathname.includes("speaking") ? "active" : ""
+                locationPath.pathname.includes("speaking") ? "active" : ""
               }`}
               to="/speaking"
             >
@@ -48,7 +49,7 @@ export const NavBar = () => {
           <li>
             <Link
               className={`${
-                useLocation().pathname.includes("about") ? "active" : ""
+                locationPath.pathname.includes("about") ? "active" : ""
               }`}
               to="/about"
             >
@@ -59,7 +60,7 @@ export const NavBar = () => {
         <div className="nav-logo">
           <li>
             <Link
-              className={`${useLocation().pathname === "/" ? "active" : ""}`}
+              className={`${locationPath.pathname === "/" ? "active" : ""}`}
               to="/"
             >
               Karl-Yann Assah

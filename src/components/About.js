@@ -2,6 +2,7 @@ import "./About.css";
 import img from "../assets/karl-2.jpg";
 
 export const About = () => {
+  const text = "// Key Characteristics";
   return (
     <div className="about">
       <div className="about-header">
@@ -63,11 +64,11 @@ export const About = () => {
           </span>
         </p>
         <div className="about-img">
-          <img src={img}></img>
+          <img alt="image of Karl" src={img}></img>
         </div>
       </div>
       <div className="about-char">
-        <h2>// Key Characteristics</h2>
+        <h2>{text}</h2>
         <ul>
           <li>Problem-Solver</li>
           <li>Adaptable</li>

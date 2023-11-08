@@ -53,7 +53,11 @@ export const Speaking = () => {
               <p>
                 Filled with value and intelligence, the ninth episode was shared
                 with{" "}
-                <a href="https://www.instagram.com/kypunch" target="_blank">
+                <a
+                  href="https://www.instagram.com/kypunch"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   @kypunch
                 </a>{" "}
                 around the modeling industry, personal branding and
@@ -141,7 +145,7 @@ export const Speaking = () => {
         <br />
         <br />
         <div className="speaking-footer-btn">
-          <a href={Pdf} target="_blank">
+          <a href={Pdf} target="_blank" rel="noreferrer">
             Download Karl-Yann's MediaKit
           </a>
         </div>

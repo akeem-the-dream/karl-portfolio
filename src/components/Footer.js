@@ -2,9 +2,7 @@ import "./Footer.css";
 import React from "react";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { Container, Row, Col } from "react-bootstrap";
 import { send } from "emailjs-com";
 import "animate.css";
 
@@ -22,6 +20,7 @@ export const Footer = () => {
     virtual: false,
     inPerson: false,
   };
+  const colabText = "//Let's collaborate!";
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
@@ -77,7 +76,7 @@ export const Footer = () => {
       </div>
       <div className="contact-form">
         <div className="email-contact">
-          <label>//Let's collaborate!</label>
+          <label>{colabText}</label>
           <form onSubmit={handleSubmit}>
             <div className="contact-wrapper">
               <div className="contCol">
@@ -212,13 +211,18 @@ export const Footer = () => {
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/karl-yann-assah"
+                  rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
                   <span>Link Me</span>
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://www.instagram.com/kypunch">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/kypunch"
+                  rel="noreferrer"
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                   <span>Follow Me</span>
                 </a>
