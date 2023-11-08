@@ -129,9 +129,11 @@
     .edentity-img {
         width: 100%;
     }
+
     .edentity-body {
         flex-direction: column-reverse;
     }
+
     .footer-btn a {
         width: 370px;
     }
