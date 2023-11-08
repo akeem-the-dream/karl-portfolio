@@ -83,6 +83,22 @@
     flex-direction: column;
 }
 
+.email-contact>label {
+
+    display: flex;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 26px;
+    white-space: pre-line;
+    opacity: 1;
+    visibility: visible;
+    font-family: "Source Sans Pro";
+    font-style: italic;
+}
+
 .contRow {
     display: flex;
     margin: 10px 0px;
@@ -126,6 +142,10 @@
     border: 0;
     padding: 0;
     margin: 0 3px;
+}
+
+.check-opt label {
+    font-style: italic;
 }
 
 .contact-text textarea {
@@ -174,4 +194,16 @@
     transform: translateY(-2px);
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
     transition: all 0.2s ease-in-out;
+}
+
+.footer-calendar {
+    position: relative;
+    background-color: rgb(43, 43, 43);
+    height: min-content;
+    min-width: 75%;
+
+}
+
+.footer-calendar abbr {
+    text-decoration: none;
 }

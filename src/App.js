@@ -9,7 +9,6 @@ import { About } from "./components/About";
 import { Home } from "./components/Home";
 import { Edentity } from "./components/Edentity";
 import { Project } from "./components/Project";
-import { Contact } from "./components/Contact";
 import { Speaking } from "./components/Speaking";
 import { mapStateToProps, mapDispatchToProps } from "./store/Selector";
 import { storeReducer } from "./store/Reducer";
@@ -25,7 +24,7 @@ const Components = ({ Darkmode, toggle, displayModal, modalInfo }) => {
             <Route path="/edentity" element={<Edentity />} />
             <Route path="/projects" element={<Project />} />
             <Route path="/speaking" element={<Speaking />} />
-            <Route path="/about" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Route>
         </Routes>
       </BrowserRouter>

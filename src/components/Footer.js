@@ -10,10 +10,17 @@ import "animate.css";
 
 export const Footer = () => {
   const formInitialDetails = {
-    fullName: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
+    date: new Date() | null,
+    crowdSize: "",
+    location: "",
+    topic: "",
     message: "",
+    virtual: false,
+    inPerson: false,
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
@@ -32,12 +39,19 @@ export const Footer = () => {
 
     await send(
       "service_c4q5zj9",
-      "template_h5jyjlw",
+      "template_5bcuasf",
       {
-        fullName: JSON.stringify(formDetails.fullName),
+        firstName: JSON.stringify(formDetails.firstName),
+        lastName: JSON.stringify(formDetails.lastName),
         email: JSON.stringify(formDetails.email),
         phone: JSON.stringify(formDetails.phone),
+        date: JSON.stringify(formDetails.date),
+        crowdSize: JSON.stringify(formDetails.crowdSize),
+        location: JSON.stringify(formDetails.location),
+        topic: JSON.stringify(formDetails.topic),
         message: JSON.stringify(formDetails.message),
+        virtual: JSON.stringify(formDetails.virtual),
+        inPerson: JSON.stringify(formDetails.inPerson),
       },
       "8AAQo8ozRSczXBXlu"
     )
@@ -63,6 +77,7 @@ export const Footer = () => {
       </div>
       <div className="contact-form">
         <div className="email-contact">
+          <label>//Let's collaborate!</label>
           <form onSubmit={handleSubmit}>
             <div className="contact-wrapper">
               <div className="contCol">
@@ -70,9 +85,9 @@ export const Footer = () => {
                   <input
                     required
                     type="text"
-                    value={formDetails.fullName}
-                    placeholder="Full Name*"
-                    onChange={(e) => onFormUpdate("fullName", e.target.value)}
+                    value={formDetails.firstName}
+                    placeholder="First Name*"
+                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </div>
                 <div className="contRow">
@@ -86,18 +101,21 @@ export const Footer = () => {
                 </div>
                 <div className="contRow">
                   <input
-                    type="tel"
-                    value={formDetails.phone}
-                    placeholder="Phone No."
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
+                    required
+                    type="date"
+                    value={formDetails.date}
+                    placeholder="What is the date of the event?*"
+                    onChange={(e) => onFormUpdate("date", e.target.value)}
                   />
                 </div>
+
                 <div className="contRow">
                   <input
-                    type="tel"
-                    value={formDetails.phone}
-                    placeholder="Phone No."
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
+                    required
+                    type="text"
+                    value={formDetails.location}
+                    placeholder="location of the Event?*"
+                    onChange={(e) => onFormUpdate("location", e.target.value)}
                   />
                 </div>
               </div>
@@ -106,59 +124,64 @@ export const Footer = () => {
                   <input
                     required
                     type="text"
-                    value={formDetails.fullName}
-                    placeholder="Full Name*"
-                    onChange={(e) => onFormUpdate("fullName", e.target.value)}
+                    value={formDetails.lastName}
+                    placeholder="Last Name*"
+                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </div>
                 <div className="contRow">
                   <input
                     required
-                    type="email"
-                    value={formDetails.email}
-                    placeholder="Email Address*"
-                    onChange={(e) => onFormUpdate("email", e.target.value)}
-                  />
-                </div>
-                <div className="contRow">
-                  <input
                     type="tel"
                     value={formDetails.phone}
-                    placeholder="Phone No."
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Phone number(999-999-9999)*"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </div>
                 <div className="contRow">
                   <input
-                    type="tel"
-                    value={formDetails.phone}
-                    placeholder="Phone No."
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
+                    required
+                    type="text"
+                    value={formDetails.crowdSize}
+                    placeholder="What is the audience size?*"
+                    onChange={(e) => onFormUpdate("crowdSize", e.target.value)}
+                  />
+                </div>
+                <div className="contRow">
+                  <input
+                    required
+                    type="text"
+                    value={formDetails.topic}
+                    placeholder="Topic*"
+                    onChange={(e) => onFormUpdate("topic", e.target.value)}
                   />
                 </div>
               </div>
             </div>
-            <form className="form-checkbox" required>
-              <label> The Event is:*</label>
+            <div className="form-checkbox">
+              <label> The event is:</label>
               <div className="check-opt">
                 <input
                   type="checkbox"
-                  id="vehicle1"
-                  name="vehicle1"
-                  value="Bike"
+                  id="virtual"
+                  name="virtual"
+                  value={formDetails.virtual}
+                  onChange={(e) => onFormUpdate("virtual", e.target.checked)}
                 ></input>
-                <label for="vehicle1"> I have a bike</label>
+                <label> Virtual</label>
               </div>
               <div className="check-opt">
                 <input
                   type="checkbox"
-                  id="vehicle2"
-                  name="vehicle2"
-                  value="Car"
+                  id="inPerson"
+                  name="inPerson"
+                  value={formDetails.inPerson}
+                  onChange={(e) => onFormUpdate("inPerson", e.target.checked)}
                 ></input>
-                <label for="vehicle2"> I have a car</label>
+                <label> In Person</label>
               </div>
-            </form>
+            </div>
             <div className="contact-text">
               <textarea
                 rows="1"
@@ -168,16 +191,14 @@ export const Footer = () => {
               ></textarea>
             </div>
             {status.message && (
-              <div className="contRow">
+              <div>
                 <p className={status.success === false ? "danger" : "success"}>
                   {status.message}
                 </p>
               </div>
             )}
             <div className="contact-form-btn">
-              <button type="submit">
-                {buttonText}
-              </button>
+              <button type="submit">{buttonText}</button>
             </div>
           </form>
         </div>
@@ -188,13 +209,16 @@ export const Footer = () => {
           <div className="footer-social-wrapper">
             <ul className="footer-social">
               <li>
-                <a href="https://www.linkedin.com/in/karl-yann-assah">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/karl-yann-assah"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                   <span>Link Me</span>
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/kypunch">
+                <a target="_blank" href="https://www.instagram.com/kypunch">
                   <FontAwesomeIcon icon={faInstagram} />
                   <span>Follow Me</span>
                 </a>
