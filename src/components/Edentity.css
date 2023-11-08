@@ -118,3 +118,21 @@
     font-size: 40px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 480px) {
+    .edentity-header {
+        width: 100%;
+        align-items: center;
+    }
+
+    .edentity-text,
+    .edentity-img {
+        width: 100%;
+    }
+    .edentity-body {
+        flex-direction: column-reverse;
+    }
+    .footer-btn a {
+        width: 370px;
+    }
+}

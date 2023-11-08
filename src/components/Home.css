@@ -16,11 +16,15 @@
     height: 785px;
 }
 
+
 .banner h1 {
     padding: 30px 0;
     text-wrap: wrap;
     font-size: 44px;
 }
+
+
+
 
 .quote-wrapper {
     background-color: rgb(43, 43, 43);
@@ -43,10 +47,14 @@
     font-weight: 600;
 }
 
+
+
 .quote-name {
     font-size: 20px;
     font-weight: 300;
 }
+
+
 
 .project-row-wrapper {
     padding: 0;
@@ -59,6 +67,8 @@
     justify-content: space-evenly;
 }
 
+
+
 .project-row-wrapper div {
     width: 30%;
     display: flex;
@@ -69,12 +79,15 @@
     align-items: center;
 }
 
+
+
 .project-row-wrapper p {
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 1px 5px;
 }
+
 
 .project-row-wrapper label {
     background-color: rgba(0, 0, 0, 0.5);
@@ -101,6 +114,8 @@
     font-size: 30px;
 }
 
+
+
 .info-row {
     padding: 0;
     margin: 0;
@@ -112,6 +127,8 @@
     justify-content: space-around;
 }
 
+
+
 .news-block {
     display: flex;
     flex-direction: column;
@@ -119,6 +136,7 @@
     height: 100%;
     align-items: center;
 }
+
 
 .news-vid {
     height: 70%;
@@ -137,8 +155,9 @@
     font-size: 12px;
     text-align: justify;
     margin: 0 0 20px 0;
-
 }
+
+
 
 .news-desc-sub {
     display: flex;
@@ -165,4 +184,64 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .news-desc p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .news-block {
+        width: 100%;
+    }
+
+    .news-vid {
+        height: 20vh;
+    }
+
+    .info-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .info-row-wrapper {
+        height: auto;
+    }
+
+    .info-row-wrapper label {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .project-row-wrapper p {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .project-row-wrapper div {
+        width: 100%;
+        height: inherit;
+    }
+
+    .project-row-wrapper {
+        flex-direction: column;
+        height: 1200px;
+    }
+
+    .quote-name {
+        font-size: 15px;
+    }
+
+    .quote-wrapper p {
+        font-size: 25px;
+    }
+
+    .banner h1 {
+        font-size: 33px;
+    }
+
+    .banner .banner-video {
+        height: 385px;
+    }
 }

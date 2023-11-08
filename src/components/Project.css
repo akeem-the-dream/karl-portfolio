@@ -119,3 +119,22 @@
     visibility: visible;
     margin: 20px 0 0 0;
 }
+
+@media screen and (max-width: 480px) {
+    .project {
+        align-items: center;
+    }
+
+    .project-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pvsa-img-4,
+    .pvsa-img-3,
+    .pvsa-img-2,
+    .pvsa-img-1 {
+        margin: 1vh 0;
+        width: 100%;
+    }
+}

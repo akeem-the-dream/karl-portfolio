@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { legacy_createStore as createStore } from "redux";
 import { Provider, connect } from "react-redux";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
@@ -14,7 +14,7 @@ import { mapStateToProps, mapDispatchToProps } from "./store/Selector";
 import { storeReducer } from "./store/Reducer";
 const store = createStore(storeReducer);
 
-const Components = ({ Darkmode, toggle, displayModal, modalInfo }) => {
+const Components = ({}) => {
   return (
     <div className="App">
       <BrowserRouter>

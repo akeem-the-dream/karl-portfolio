@@ -1,6 +1,13 @@
 import "./Project.css";
+import $ from "jquery";
+import { useState } from "react";
 
 export const Project = () => {
+  const [width, setWith] = useState(window.screen.width);
+
+  $(window).resize(function () {
+    setWith(window.screen.width);
+  });
   return (
     <div className="project">
       <div className="project-header">
@@ -26,7 +33,12 @@ export const Project = () => {
           </p>
         </div>
       </div>
-      <div className="project-row">
+      <div
+        className="project-row"
+        style={{
+          flexDirection: width < 481 ? "column-reverse" : "",
+        }}
+      >
         <div className="project-desc">
           <span>Diversity Business League l DBL</span>
           <p>
@@ -60,7 +72,12 @@ export const Project = () => {
           </p>
         </div>
       </div>
-      <div className="project-row">
+      <div
+        className="project-row"
+        style={{
+          flexDirection: width < 481 ? "column-reverse" : "",
+        }}
+      >
         <div className="project-desc">
           <span>Books for Africa</span>
           <p>

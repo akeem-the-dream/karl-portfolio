@@ -37,6 +37,7 @@
     list-style: none;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    padding: 0;
 }
 
 .footer-social-wrapper .footer-social li a {
@@ -67,6 +68,8 @@
 .email-contact {
     width: 50%;
 }
+
+
 
 .contact-wrapper {
 
@@ -206,4 +209,29 @@
 
 .footer-calendar abbr {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .email-contact,
+    .social-contact {
+        width: 100%;
+    }
+
+    .contact-form {
+        flex-direction: column;
+
+    }
+
+    .contact-form-btn button {
+        width: 100%;
+    }
+
+    .contRow input {
+        font-size: 15px;
+    }
+
+    .footer-wrapper {
+        padding: 2vh 2vh 5vh;
+    }
 }

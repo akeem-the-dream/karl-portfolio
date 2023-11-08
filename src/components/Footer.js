@@ -135,7 +135,7 @@ export const Footer = () => {
                     type="tel"
                     value={formDetails.phone}
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    placeholder="Phone number(999-999-9999)*"
+                    placeholder="Phone #(999-999-9999)*"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </div>
@@ -144,7 +144,7 @@ export const Footer = () => {
                     required
                     type="text"
                     value={formDetails.crowdSize}
-                    placeholder="What is the audience size?*"
+                    placeholder="The audience size?*"
                     onChange={(e) => onFormUpdate("crowdSize", e.target.value)}
                   />
                 </div>
@@ -186,7 +186,7 @@ export const Footer = () => {
               <textarea
                 rows="1"
                 value={formDetails.message}
-                placeholder="Any other notes/questions?"
+                placeholder="notes/questions?"
                 onChange={(e) => onFormUpdate("message", e.target.value)}
               ></textarea>
             </div>
