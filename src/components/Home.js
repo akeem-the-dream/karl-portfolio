@@ -1,16 +1,18 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 import img1 from "../assets/karl-1.jpeg";
 import img2 from "../assets/edentity-logo.png";
 import img3 from "../assets/dbl.jpeg";
 
 export const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className="home-wrapper">
       <div className="banner">
         <div>
           <h1>
-            Karl-Yann Assah: Technology Professional, Entrepreneur, Pr
+            Karl-Yann Assah: Technology Professional, Entrepreneur, PR
             Specialist, International Model, Scholar
           </h1>
           <div className="banner-video">
@@ -35,17 +37,25 @@ export const Home = () => {
       </div>
       <div className="project-row-wrapper">
         <div className="project-1">
-          <img alt="Karl" src={img1}></img>
+          <img alt="Karl" src={img1} onClick={() => navigate("/about")}></img>
           <label>KARL-YANN ASSAH</label>
           <p>Professional Experience</p>
         </div>
         <div className="project-2">
-          <img alt="EDENTITY" src={img2}></img>
+          <img
+            alt="EDENTITY"
+            src={img2}
+            onClick={() => navigate("/edentity")}
+          ></img>
           <label>EDENTITY</label>
           <p>Elevating Personal Branding</p>
         </div>
         <div className="project-3">
-          <img alt="IMPACT" src={img3}></img>
+          <img
+            alt="IMPACT"
+            src={img3}
+            onClick={() => navigate("/projects")}
+          ></img>
           <label>IMPACT</label>
           <p>Action Speaks Louder</p>
         </div>

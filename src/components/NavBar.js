@@ -1,21 +1,20 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import "./NavBar.css";
 
 export const NavBar = () => {
+  const [showMenu, setshowMenu] = useState(true);
   const locationPath = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [locationPath.pathname]);
-
-  const [status, setStatus] = useState(true);
   return (
     <>
       <ul className="topnav">
-        <div className={status === true ? "disable" : "enable"}>
+        <div className={showMenu === true ? "disable" : "enable"}>
           <li>
             <Link
               className={`${
@@ -69,10 +68,14 @@ export const NavBar = () => {
           <div
             className="bar-menu"
             onClick={() => {
-              setStatus(!status);
+              setshowMenu(!showMenu);
             }}
           >
-            <FontAwesomeIcon icon={faBars} />
+            {showMenu ? (
+              <FontAwesomeIcon icon={faBars} />
+            ) : (
+              <FontAwesomeIcon icon={faTimes} />
+            )}
           </div>
         </div>
       </ul>
