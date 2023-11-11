@@ -74,7 +74,7 @@ export const About = () => {
           <li>Adaptable</li>
           <li>Innovative</li>
           <li>Data Driven</li>
-          <li>leadership</li>
+          <li>Leadership</li>
         </ul>
       </div>
     </div>
