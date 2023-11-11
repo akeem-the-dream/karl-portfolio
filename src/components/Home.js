@@ -36,26 +36,18 @@ export const Home = () => {
         </p>
       </div>
       <div className="project-row-wrapper">
-        <div className="project-1">
-          <img alt="Karl" src={img1} onClick={() => navigate("/about")}></img>
+        <div className="project-1" onClick={() => navigate("/about")}>
+          <img alt="Karl" src={img1}></img>
           <label>KARL-YANN ASSAH</label>
           <p>Professional Experience</p>
         </div>
-        <div className="project-2">
-          <img
-            alt="EDENTITY"
-            src={img2}
-            onClick={() => navigate("/edentity")}
-          ></img>
+        <div className="project-2" onClick={() => navigate("/edentity")}>
+          <img alt="EDENTITY" src={img2}></img>
           <label>EDENTITY</label>
           <p>Elevating Personal Branding</p>
         </div>
-        <div className="project-3">
-          <img
-            alt="IMPACT"
-            src={img3}
-            onClick={() => navigate("/projects")}
-          ></img>
+        <div className="project-3" onClick={() => navigate("/projects")}>
+          <img alt="IMPACT" src={img3}></img>
           <label>IMPACT</label>
           <p>Action Speaks Louder</p>
         </div>
