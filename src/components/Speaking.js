@@ -271,7 +271,7 @@ export const Speaking = () => {
                     type="tel"
                     value={formDetails.phone}
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    placeholder="Phone #(999-999-9999)*"
+                    placeholder="Phone(###-###-####)*"
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </div>
