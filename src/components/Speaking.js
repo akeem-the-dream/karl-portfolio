@@ -133,9 +133,9 @@ export const Speaking = () => {
                 uncomfortable allow us to grow. To dedicate his life to become
                 better and leave a legacy are his goals. With that, I leave you
                 with one of his quote “complacency kills dreams, complacency
-                keeps you at the same level & complacency gives you regret. It’s
+                keeps you at the same level & complacency gives you regret. It`s
                 up to you to do the work for what matters the most”. Enjoy the
-                show! and don’t forget, Around A Glass always win.
+                show! and don`t forget, Around A Glass always win.
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ export const Speaking = () => {
         <p>
           &#127758; Diverse Background: From being a varsity athlete to an
           international fashion model, navigating the challenges of being a
-          Black student in STEM, receiving the U.S President’s Volunteer Service
+          Black student in STEM, receiving the U.S President`s Volunteer Service
           Award and working in the fascinating realm of Tech (Artificial
           Intelligence), he has amassed a wealth of insights, perspectives and
           stories.
