@@ -157,9 +157,30 @@ export const Speaking = () => {
                 <p>Lifelong Learning Institute</p>
               </div>
               <p>
-                Nunc egestas leo lorem, vel condimentum turpis mattis non.
-                Vivamus ornare fermentum lacinia. Proin in nibh ac nunc commodo
-                vulputate. Ut eget erat arcu. Ut in fermentum velit.
+                Karl-Yann delivers a speech aimed at Gen Z, emphasizing the
+                importance of strategic positioning to achieve long-term
+                success. He shares personal insights from excelling
+                academically, thriving in fashion, and excelling as an athlete.
+                Offering a growth toolkit, he advocates for consistent
+                contribution to different aspects of life and emphasizes five
+                key approaches to avoid wasting opportunities.
+                <br /> <br /> Complacency Kills: Consistency in various realms
+                is crucial, achieved through setting up systems to avoid
+                shortcomings. <br /> Discipline: Establishing personalized
+                routines, employing accountability systems, and eliminating
+                distractions build momentum and yield significant rewards.
+                <br /> Self-Awareness: Assessing one's skills, strengths, and
+                weaknesses forms a growth baseline and aids in team
+                contribution. A strong belief system fosters resilience. <br />
+                Embrace Curiosity: Seek knowledge from mentors, friends, and
+                colleagues for intellectual growth. <br />
+                Potential Maximization: The '0 Dollar Strategy' involves
+                focusing on present improvement rather than dwelling on past
+                performance, aligning with humility that grounds one in the
+                present and avoids ego-driven pride. <br /> <br /> Karl-Yann
+                stresses the importance of humility, which separates ego-driven
+                past and future pride, emphasizing the value of staying present
+                for personal growth and success.
               </p>
             </div>
           </div>

@@ -28,7 +28,7 @@
 .speaking-info-row-wrapper {
     padding: 0 5vw;
     margin: 0;
-    height: 490px;
+    height: 655px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -58,7 +58,7 @@
 }
 
 .speaking-news-vid {
-    height: 48%;
+    height: 40%;
     width: 100%;
 }
 
