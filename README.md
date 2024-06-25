@@ -10,4 +10,4 @@ Currently building Edentity - a full fledged image consulting company - Karl is 
 
 ### Link
 
-Learn more @ https://karlyannassah.com/
+Learn more @ https://karlyannassah.com
